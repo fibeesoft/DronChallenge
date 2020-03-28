@@ -17,13 +17,13 @@ public class Dron3D : MonoBehaviour
         transform.localRotation = Quaternion.Euler(Input.GetAxis("Vertical") * 15f, 0f, Input.GetAxis("Horizontal") * -35f);
         foreach (var prop in propellers)
         {
-            if(prop.name.Substring(1) == "cw")
+            if (prop.name.Substring(1) == "cw")
             {
-                prop.transform.Rotate(0f, (20f + 5f * dron.DroneActualSpeed), 0f, Space.Self);
+                prop.transform.Rotate(0f, 20f, 0f, Space.Self);
             }
             if (prop.name.Substring(1) == "ccw")
             {
-                prop.transform.Rotate(0f, (20f + 5f * dron.DroneActualSpeed) * -1, 0f, Space.Self);
+                prop.transform.Rotate(0f, 20f * -1, 0f, Space.Self);
             }
         }
     }

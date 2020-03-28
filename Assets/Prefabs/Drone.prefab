@@ -56,7 +56,6 @@ GameObject:
   - component: {fileID: 167105630048674306}
   - component: {fileID: 167105630048674316}
   - component: {fileID: 167105630048674307}
-  - component: {fileID: 2289122315169902388}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Player
@@ -92,10 +91,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69aa079c10dff2645b79da6f3a8dd56a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderBattery: {fileID: 0}
-  sliderHP: {fileID: 0}
-  sliderBoost: {fileID: 0}
-  cam: {fileID: 167105630424918283}
   dron3dmodel: {fileID: 167105628461856447}
 --- !u!54 &167105630048674316
 Rigidbody:
@@ -126,20 +121,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.4, y: 0.08, z: 0.4}
   m_Center: {x: 0, y: 0, z: 0.02}
---- !u!114 &2289122315169902388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 167105630048674305}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1331419fe882cf1498f73e6a844dbb56, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  effectHit: {fileID: 1091149795932906774, guid: ccf204f244f613244a1b4b6c50da4ec0,
-    type: 3}
 --- !u!1 &167105630424918280
 GameObject:
   m_ObjectHideFlags: 0

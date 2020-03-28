@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public DronPlayer[] dronePlayerArray;
+
     private void Awake()
     {
         if(instance == null)
@@ -22,26 +22,7 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-        if (Input.GetKeyDown(KeyCode.M))
-        {
-            LoadMenu();
-        }
-    }
-
- 
-
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene(0);
-    }    
+   
 
 }
